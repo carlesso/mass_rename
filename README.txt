@@ -19,6 +19,29 @@ that will be read from your $EDITOR settings variable.
 echo $EDITOR
 ```
 
+# Usage
+
+```
+usage: mass_rename [-h] [-s] [-c] [-C] [-k] [-v] [-e EXTENSION]
+  files [files ...]
+
+Command line parser for Mass Rename
+
+positional arguments:
+  files                 List of files to be renamed
+
+ optional arguments:
+  -h, --help            show this help message and exit
+  -s, --split           Open vim in split mode, edit in the left view (force
+                        the use of vim instead of $EDITOR)
+  -c, --confirm         Print changes and wait for confirmation
+  -C, --confirm-all     Ask confirmation for each file
+  -k, --skip-extension  Skip extensions
+  -v, --verbose         Add verbosity
+  -e EXTENSION, --extension EXTENSION
+                        Extra extensions if not recognized (can be specified
+                        more times)
+```
 
 # About
 Author: Enrico Carlesso
